@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/demo_img"
+        android:src="@drawable/img"
+        android:layout_width="270dp"
+        android:layout_height="380dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/demo_img"
+        android:text="大唐女法医"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:paddingLeft="8dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
