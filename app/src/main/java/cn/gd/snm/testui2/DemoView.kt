@@ -56,8 +56,6 @@ class DemoView: ConstraintLayout {
 
     /**
      * 确定当前view的大小。
-     *
-     *
      */
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
 

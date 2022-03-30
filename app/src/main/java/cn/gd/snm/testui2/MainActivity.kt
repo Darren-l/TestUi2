@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
 import android.view.LayoutInflater
+import cn.gd.snm.testui2.svgtest.TestSvgView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,9 +19,24 @@ class MainActivity : AppCompatActivity() {
 
 //        testJavaImp()
 
-        testJavaImp2()
+//        testJavaImp2()
+
+        testSvgTest()
     }
 
+    /**
+     * 测试svg。
+     *
+     */
+    private fun testSvgTest() {
+        var svgView = TestSvgView(this)
+        ly_body.addView(svgView)
+    }
+
+    /**
+     * Java实现2
+     *
+     */
     private fun testJavaImp2() {
         var width = AppGlobals.dp2px(this,270f)
         var height = AppGlobals.dp2px(this,440f)
